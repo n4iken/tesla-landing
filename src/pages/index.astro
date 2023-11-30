@@ -1,0 +1,207 @@
+---
+import LandingHeader from '../components/LandingHeader.astro';
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+---
+
+<Layout title="Tesla Landing">
+  <!-- * ====== HEADER ====== * -->
+  <LandingHeader />
+
+  <!-- * ====== MAIN ====== * -->
+  <main class="snap-y snap-mandatory relative h-screen w-screen overflow-auto">
+    <Section title="Disfrute de Tesla" color="#eee">
+      <p slot="subtitle" class="text-sm">
+        Programe una prueba de conducción hoy mismo
+      </p>
+
+      <footer slot="footer" class="[&>a]:w-[264px] text-[#eee] pb-16 flex">
+        <a
+          class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+          href="#">Prueba de conducción</a
+        >
+      </footer>
+
+      <video
+        slot="background"
+        class="object-cover min-h-full brightness-75"
+        autoplay
+        muted
+        loop
+        src="../../public/hero.webm"></video>
+    </Section>
+
+    <Section title="Model 3" color="#111">
+      <a
+        slot="subtitle"
+        href="#"
+        class="text-sm underline underline-offset-4 hover:opacity-80 transition-opacity"
+        >Explorar Inventario</a
+      >
+
+      <footer slot="footer" class="pb-4 flex flex-col items-center gap-8">
+        <div class="flex gap-6 [&>a]:w-[264px] text-[#eee]">
+          <a
+            class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+            href="#">Pedido personalizado</a
+          >
+          <a
+            class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+            href="#">Saber más</a
+          >
+        </div>
+
+        <a
+          slot="subtitle"
+          href="#"
+          class="text-xs text-[#111] underline underline-offset-4 hover:opacity-80 transition-opacity"
+          >Disponible con Moves III</a
+        >
+      </footer>
+      <img
+        slot="background"
+        class="object-cover min-h-full brightness-90"
+        src="../../public/model3.avif"
+      />
+    </Section>
+
+    <Section title="Model Y" color="#eee">
+      <a
+        slot="subtitle"
+        href="#"
+        class="text-sm underline underline-offset-4 hover:opacity-80 transition-opacity"
+        >Explorar Inventario</a
+      >
+
+      <footer slot="footer" class="pb-4 flex flex-col items-center gap-8">
+        <div class="flex gap-6 [&>a]:w-[264px] text-[#eee]">
+          <a
+            class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+            href="#">Pedido personalizado</a
+          >
+          <a
+            class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+            href="#">Prueba de conducción</a
+          >
+        </div>
+
+        <a
+          slot="subtitle"
+          href="#"
+          class="text-xs text-[#eee] underline underline-offset-4 hover:opacity-80 transition-opacity"
+          >Disponible con Moves III</a
+        >
+      </footer>
+
+      <video
+        slot="background"
+        class="object-cover min-h-full brightness-75"
+        autoplay
+        muted
+        loop
+        src="../../public/modelY.webm"></video>
+    </Section>
+
+    <Section title="Model S" color="#111">
+      <a
+        slot="subtitle"
+        href="#"
+        class="text-sm underline underline-offset-4 hover:opacity-80 transition-opacity"
+        >Explorar Inventario</a
+      >
+
+      <footer
+        slot="footer"
+        class="[&>a]:w-[264px] text-[#eee] pb-16 flex gap-6"
+      >
+        <a
+          class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+          href="#">Pedido personalizado</a
+        >
+        <a
+          class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+          href="#">Prueba de conducción</a
+        >
+      </footer>
+
+      <img
+        slot="background"
+        class="object-cover min-h-full brightness-90"
+        src="../../public/modelS.avif"
+      />
+    </Section>
+
+    <Section title="Model X" color="#111">
+      <a
+        slot="subtitle"
+        href="#"
+        class="text-sm underline underline-offset-4 hover:opacity-80 transition-opacity"
+        >Explorar Inventario</a
+      >
+
+      <footer
+        slot="footer"
+        class="[&>a]:w-[264px] text-[#eee] pb-16 flex gap-6"
+      >
+        <a
+          class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+          href="#">Pedido personalizado</a
+        >
+        <a
+          class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+          href="#">Prueba de conducción</a
+        >
+      </footer>
+
+      <img
+        slot="background"
+        class="object-cover min-h-full brightness-90"
+        src="../../public/modelX.avif"
+      />
+    </Section>
+
+    <Section title="Solar y Powerwall" color="#1">
+      <p slot="subtitle" class="text-sm">Energía para todos</p>
+
+      <footer slot="footer" class="[&>a]:w-[264px] text-[#eee] pb-16 flex">
+        <a
+          class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+          href="#">Saber más</a
+        >
+      </footer>
+
+      <img
+        slot="background"
+        class="object-cover min-h-full brightness-90"
+        src="../../public/solarPanels.avif"
+      />
+    </Section>
+
+    <Section title="Accesorios" color="#111">
+      <footer
+        slot="footer"
+        class="[&>a]:w-[264px] text-[#eee] pb-24 flex flex-col items-center gap-14"
+      >
+        <a
+          class="py-2.5 font-medium backdrop-blur-sm bg-black/60 rounded-md text-sm hover:bg-white/60 hover:text-[#111] transition-colors"
+          href="#">Comprar Ahora</a
+        >
+
+        <ul class="[&>li>a]:text-[#eee] list-none text-xs flex gap-4">
+          <li><a href="#">Tesla &copy; 2023</a></li>
+          <li><a href="#">Privacidad y legal</a></li>
+          <li><a href="#">Contecto</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Seguir informado</a></li>
+          <li><a href="#">Localización de tiendas</a></li>
+        </ul>
+      </footer>
+
+      <img
+        slot="background"
+        class="object-cover min-h-full brightness-90"
+        src="../../public/accessories.avif"
+      />
+    </Section>
+  </main>
+</Layout>
